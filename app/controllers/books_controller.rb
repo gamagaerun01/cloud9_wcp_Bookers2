@@ -10,6 +10,7 @@ class BooksController < ApplicationController
     @newbook = Book.new
     @book = Book.find(params[:id])
     @user = current_user
+    @book_comment = BookComment.new
   end
 
   def create
